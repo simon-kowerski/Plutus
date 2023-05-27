@@ -46,7 +46,8 @@ async def on_reaction_add(reaction, user):
   files whenever joining server created
   on name change, change server name
   users stuff
-"""
+""" 
+#test test 
 
 #start the bot:
 try:
