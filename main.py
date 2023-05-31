@@ -47,7 +47,7 @@ async def on_reaction_add(reaction, user):
   on name change, change server name
   users stuff
 """ 
-#bye bye
+#hello
 
 #start the bot:
 try:
