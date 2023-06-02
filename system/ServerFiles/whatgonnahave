@@ -1,9 +1,0 @@
-'name'# 0level 1exp 2currency
-
-
-
-
-
-collectables will be represented by a number in the form 00
-they will be strung together
-a person with collectable 0, 1, 2, and 3 will have a collectable string: 00,01,02,03,
