@@ -281,15 +281,15 @@ class Poker: #texas holdem
   
   async def end_game(self):
     await self.message.clear_reactions()
-	try:
+    try:
     	high = self.calculate_score(self.players[0])
     	winner = self.players[0]
     	for player in self.players:
       		score = self.calculate_score(player)
-      	if score[0] > high[0]:
+    	if score[0] > high[0]:
         	high = score
         	winner = player
-      	elif score[0] == high[0]:
+    	elif score[0] == high[0]:
         	if score[1] == high[1]:
           		high = score
           		winner = player
@@ -304,8 +304,8 @@ class Poker: #texas holdem
     	message = f'Congratulations <@{winner.mention}>! you have won {self.table_total} pineapple with a {hand_type[high[0] - 1]}'
     	footer = 'Game Over!'
     	await self.generate_embed(game_message=message, footer = footer, end = True)
-	except:
-		print("it broke")
+    except:
+        print("it broke")
     position = 0
     await self.mainMessage.delete()
     for game in games:
