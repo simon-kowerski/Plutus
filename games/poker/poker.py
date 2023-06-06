@@ -281,29 +281,31 @@ class Poker: #texas holdem
   
   async def end_game(self):
     await self.message.clear_reactions()
-    high = self.calculate_score(self.players[0])
-    winner = self.players[0]
-    for player in self.players:
-      score = self.calculate_score(player)
-      if score[0] > high[0]:
-        high = score
-        winner = player
-      elif score[0] == high[0]:
-        if score[1] == high[1]:
-          high = score
-          winner = player
+	try:
+    	high = self.calculate_score(self.players[0])
+    	winner = self.players[0]
+    	for player in self.players:
+      		score = self.calculate_score(player)
+      	if score[0] > high[0]:
+        	high = score
+        	winner = player
+      	elif score[0] == high[0]:
+        	if score[1] == high[1]:
+          		high = score
+          		winner = player
 
-    from system import currencysystem as pineapple
-    pineapple.add_currency(winner.user, winner.message.guild, self.table_total)
+    	from system import currencysystem as pineapple
+    	pineapple.add_currency(winner.user, winner.message.guild, self.table_total)
 
-    from system import levelsystem, currencysystem
-    await levelsystem.add_exp(self.author, self.channel.guild, win_exp, channel = self.channel)
+    	from system import levelsystem, currencysystem
+    	await levelsystem.add_exp(self.author, self.channel.guild, win_exp, channel = self.channel)
           
-    hand_type = ['high card', 'one pair', 'two pair', 'three of a kind', 'straight', 'flush', 'full house', 'four of a kind', 'straight flush', 'royal flush']
-    message = f'Congratulations <@{winner.mention}>! you have won {self.table_total} pineapple with a {hand_type[high[0] - 1]}'
-    footer = 'Game Over!'
-    await self.generate_embed(game_message=message, footer = footer, end = True)
-    
+    	hand_type = ['high card', 'one pair', 'two pair', 'three of a kind', 'straight', 'flush', 'full house', 'four of a kind', 'straight flush', 'royal flush']
+    	message = f'Congratulations <@{winner.mention}>! you have won {self.table_total} pineapple with a {hand_type[high[0] - 1]}'
+    	footer = 'Game Over!'
+    	await self.generate_embed(game_message=message, footer = footer, end = True)
+	except:
+		print("it broke")
     position = 0
     await self.mainMessage.delete()
     for game in games:
