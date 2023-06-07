@@ -1,4 +1,4 @@
-<h1 align="center">Plu tus</h1>
+<h1 align="center">Plutus</h1>
 <h3 align="center">a discord bot that does stuff and thigns</h3>
 
 - 📫 How to reach us **kowerski8@gmail.com | serenesiu13@gmail.com**
