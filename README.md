@@ -1,7 +1,7 @@
 <h1 align="center">Plutus</h1>
 <h3 align="center">a discord bot that does stuff and thigns</h3>
 
-<p align="center"> 📫 kowerski8@gmail.com | serenesiu13@gmail.com
+<p align="center"> kowerski8@gmail.com | serenesiu13@gmail.com
 
 <p align="left">
 <a href="https://tinyurl.com/plutus-super-bot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="tinyurl.com/plutus-super-bot" height="30" width="40" /></a>
