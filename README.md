@@ -4,7 +4,7 @@
 - 📫 How to reach us **kowerski8@gmail.com | serenesiu13@gmail.com**
 
 <p align="left">
-<a href="https://discord.gg/tinyurl.com/plutus-super-bot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="tinyurl.com/plutus-super-bot" height="30" width="40" /></a>
+<a href="tinyurl.com/plutus-super-bot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="tinyurl.com/plutus-super-bot" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
