@@ -4,6 +4,7 @@ from system import currencysystem as currency
 import discord
 win_exp = 25
 
+#hey its fixed now
 #get rid of being able to play by yourself or someone else twice 
 
 games = []
