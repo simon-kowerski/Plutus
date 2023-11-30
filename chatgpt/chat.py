@@ -72,6 +72,7 @@ async def generate(
     conversation_history += f'GPT: {message}\n'
 
     # send the response
-    await channel.send(message)
+    #await channel.send(message)
+    await channel.send("OpenAI integration currently unavailable. Check the project development page on GitHub for updates.")
     
     return conversation_history
